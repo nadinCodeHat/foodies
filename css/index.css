@@ -1,7 +1,37 @@
-body {
-    background-color: #f2f1ed;
+body,html{
+    height: 100%;
 }
 
-.row{
-    height: 100vh;
- }
+.card-bg {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #fafafa;
+}
+
+.card{
+    width: 30rem;
+    height: 30rem;
+}
+.card-subtitle{
+    font-size: 20px;
+}
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.link-primary{
+    float: right;
+    text-decoration: none;
+}
+.link-primary:hover{
+    text-decoration: underline;
+}
