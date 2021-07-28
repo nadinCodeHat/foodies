@@ -1,5 +1,6 @@
 body,html{
     height: 100%;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .card-bg {
@@ -19,13 +20,6 @@ body,html{
 }
 .card-subtitle{
     font-size: 20px;
-}
-
-.btn-xl {
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 0px;
-    width: 100%;
 }
 
 .link-primary{
