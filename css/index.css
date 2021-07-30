@@ -20,7 +20,7 @@ body,html{
 }
 
 .card{
-    width: 30rem;
+    width: 26rem;
     height: 30rem;
 }
 .card-subtitle{
@@ -34,3 +34,8 @@ body,html{
 .link-primary:hover{
     text-decoration: underline;
 }
+
+.btn.btn-primary {
+    width: 100%;
+    height: 40px;
+} 
