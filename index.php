@@ -1,7 +1,10 @@
 <?php      
-include('connection.php');
-$email = $_POST['user'];  
-$password = $_POST['pass'];  
+
+require_once "connection.php";
+require_once "session.php";
+
+$email = $_POST['inputEmailAddress'];  
+$password = $_POST['inputPassword'];  
   
     //to prevent from mysqli injection  
     $email = stripcslashes($email);  
@@ -22,9 +25,6 @@ $password = $_POST['pass'];
     }     
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,6 +44,7 @@ $password = $_POST['pass'];
             <div class="card-body" style="background-color: White;">
                 <h5 class="card-title mb-3 fs-2 text-center">Login</h5>
                 <h6 class="card-subtitle mb-5 fs-5 text-muted text-center">Mirkwood Attendance Management System</h6>
+                    <!--Login Form-->
                     <form class="row g-3 needs-validation" novalidate method="POST" action="#">
                         <div class="mb-1">
                             <div class="form-outline">
@@ -63,29 +64,9 @@ $password = $_POST['pass'];
                             <button class="btn btn-primary" type="submit">Login</button>
                         </div>
                     </form>
+                    <!--Login Form end-->
             </div>
         </div>
     </div>
 </body>
-
-<script>
-    (() => {
-        'use strict';
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll('.needs-validation');
-
-        // Loop over them and prevent submission    
-        Array.prototype.slice.call(forms).forEach((form) => {
-            form.addEventListener('submit', (event) => {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    })();
-</script>
-
 </html>
